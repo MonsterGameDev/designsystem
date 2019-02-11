@@ -39,3 +39,17 @@ ul {
     }
   }
 }
+
+.icon-container {
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: size('xs')
+}
+
+.icon {
+  display: flex;
+  width: size('m');
+  height: size('m');
+}

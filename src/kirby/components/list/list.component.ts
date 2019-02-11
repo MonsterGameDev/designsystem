@@ -42,6 +42,7 @@ export class ListComponent implements OnInit {
   @Input() items: any[];
   @Output() itemSelect = new EventEmitter<any>();
   @Input() getSectionName?: (item: any) => string;
+  @Input() showIcon: boolean = true;
 
   // The first element that matches ListItemDirective. As a structural directive it unfolds into a template. This is a reference to that.
   @ContentChild(ListItemDirective, {read: TemplateRef}) listItemTemplate;

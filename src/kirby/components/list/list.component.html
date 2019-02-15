@@ -24,9 +24,11 @@
           >
           </ng-container>
         </ng-container>
-        <!-- <ng-container *ngIf="showIcon">
-          <kirby-icon name="cross"></kirby-icon>
-        </ng-container> -->
+        <div *ngIf="showIcon" class="icon-container"> 
+          <div class="icon">
+            <kirby-icon name="cross"></kirby-icon>
+          </div>
+      </div>
       </li>
     </ng-container>
   </ng-container>

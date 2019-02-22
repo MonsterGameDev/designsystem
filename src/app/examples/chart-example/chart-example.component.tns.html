@@ -79,5 +79,19 @@
             </kirby-card>
         </FlexboxLayout>
 
+        <FlexboxLayout>
+            <kirby-card class="theme--cookbook">
+                <kirby-card-header [title]="'Activity-Gauge'" [subtitle]="'My subtitle'">
+                </kirby-card-header>
+                <kirby-chart [height]="320" [type]="'activitygauge'" [showDataLabels]="false" [description]="'Accessibility description goes here'"
+                    [data]="[{
+                        color: 'darkgreen',
+                        radius: '112%',
+                        innerRadius: '88%',
+                        y: 80
+                      }]"></kirby-chart>
+            </kirby-card>
+        </FlexboxLayout>
+
     </StackLayout>
 </ScrollView>
